@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EM Hotel Space Guide – 1 Davis</title>
+<meta name="description" content="Book rooms 503, 504H, 504D and 504C at USF Emergency Medicine, 1 Davis Blvd, plus links to TGH FHSC bookable spaces.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f8f4; --surface:#ffffff; --ink:#17302a; --muted:#51655e;
+  --green:#006747; --green-deep:#00432e; --lime:#a2cf3a; --lime-soft:#e6f1c8;
+  --line:#d5ded6; --alert:#b92626; --on-green:#ffffff;
+  --head:'Barlow Condensed','Arial Narrow',Arial,sans-serif;
+  --body:'Barlow',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1a16; --surface:#17261f; --ink:#e8f0ea; --muted:#9fb3a8;
+    --green:#58c59a; --green-deep:#0b3a2a; --lime:#a2cf3a; --lime-soft:#26381a;
+    --line:#2a3d34; --alert:#ff7a7a; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1a16; --surface:#17261f; --ink:#e8f0ea; --muted:#9fb3a8;
+  --green:#58c59a; --green-deep:#0b3a2a; --lime:#a2cf3a; --lime-soft:#26381a;
+  --line:#2a3d34; --alert:#ff7a7a; color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 var(--body)}
+a{color:var(--green)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--lime);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+
+header.hero{background:#006747;color:#fff;border-bottom:8px solid var(--lime)}
+.hero .wrap{padding-top:44px;padding-bottom:40px}
+.hero p.org{margin:0 0 6px;font-weight:600;color:#cfe6a0}
+.hero h1{font:700 clamp(46px,9vw,92px)/.92 var(--head);margin:0 0 18px;letter-spacing:.005em}
+.hero .sub{font-size:19px;margin:0;max-width:34em;color:#e6f2ec}
+.hours{display:inline-block;margin-top:22px;background:var(--lime);color:#0b2a1e;padding:8px 16px;border-radius:8px;font-weight:600}
+
+section{padding:46px 0 6px}
+h2{font:700 clamp(30px,5vw,42px)/1 var(--head);color:var(--green);margin:0 0 8px}
+.lede{color:var(--muted);margin:0 0 24px;max-width:40em}
+
+.rooms{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;list-style:none;margin:0;padding:0}
+.room{background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:20px 20px 22px}
+.room .num{font:700 54px/1 var(--head);color:var(--green)}
+.room h3{margin:2px 0 14px;font-size:19px;font-weight:600}
+.room .lbl{font-size:14px;color:var(--muted);margin:0 0 8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+.chips li{background:var(--lime-soft);color:var(--ink);border-radius:7px;padding:3px 11px;font-weight:600;font-size:15px}
+.room.wide .chips li{background:var(--lime);color:#0b2a1e}
+
+.btn{display:inline-block;background:var(--green);color:var(--on-green);text-decoration:none;font-weight:600;padding:13px 24px;border-radius:10px;margin-top:26px}
+:root:not([data-theme="light"]) .btn{color:#06251a}
+.btn:hover{background:var(--green-deep);color:#fff}
+.note{margin:14px 0 0;color:var(--muted);font-size:15px}
+
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:0;padding:0;list-style:none}
+.rules li{background:#006747;color:#fff;border-radius:16px;padding:22px}
+.rules h3{font:700 26px/1.05 var(--head);margin:0 0 8px;color:#fff}
+.rules p{margin:0;color:#e1efe8}
+.banner{background:var(--lime);color:#0b2a1e;border-radius:12px;padding:16px 20px;margin-top:16px;font-weight:600}
+
+ol.steps{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;counter-reset:s}
+ol.steps li{counter-increment:s;background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:18px 20px}
+ol.steps li::before{content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--lime);color:#0b2a1e;font:700 22px var(--head);margin-bottom:10px}
+ol.steps b{display:block;font-size:18px}
+ol.steps span{color:var(--muted);font-size:15px}
+
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.panel{background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:22px}
+.panel h3{font:700 28px/1 var(--head);color:var(--green);margin:0 0 6px}
+.panel p{margin:0 0 12px;color:var(--muted)}
+.links{list-style:none;margin:0;padding:0}
+.links li+li{margin-top:8px}
+.links a{display:flex;justify-content:space-between;gap:12px;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;text-decoration:none;font-weight:600}
+.links a:hover{border-color:var(--green);background:var(--lime-soft)}
+.links small{font-weight:400;color:var(--muted)}
+table{width:100%;border-collapse:collapse;margin-top:6px}
+th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line)}
+th{font-weight:600;color:var(--muted);font-size:14px}
+
+dl.contacts{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:0}
+dl.contacts div{background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:14px 18px}
+dt{font:700 24px/1.1 var(--head);color:var(--green);margin:0 0 4px}
+dd{margin:0;overflow-wrap:anywhere}
+dl.contacts .emerg{border-color:var(--alert)}
+dl.contacts .emerg dt{color:var(--alert)}
+
+footer{margin-top:54px;padding:26px 0 36px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="org">USF Health · Morsani College of Medicine</p>
+    <h1>EM Hotel Space Guide</h1>
+    <p class="sub">Bookable rooms at USF Emergency Medicine, 1 Davis Blvd, plus links to other USF Health space at TGH FHSC.</p>
+    <span class="hours">Hours of operation: 8:00 AM – 5:00 PM</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="spaces">
+    <h2>Bookable spaces at 1 Davis</h2>
+    <p class="lede">Four spaces on the fifth floor. Reservations are managed in Microsoft Bookings.</p>
+    <ul class="rooms">
+      <li class="room">
+        <div class="num">503</div><h3>Conference room</h3>
+        <p class="lbl">Booking lengths</p>
+        <ul class="chips"><li>1 hr</li><li>2 hrs</li><li>4 hrs</li><li>8 hrs</li></ul>
+      </li>
+      <li class="room">
+        <div class="num">504H</div><h3>Office</h3>
+        <p class="lbl">Booking lengths</p>
+        <ul class="chips"><li>1 hr</li><li>2 hrs</li><li>4 hrs</li><li>8 hrs</li></ul>
+      </li>
+      <li class="room">
+        <div class="num">504D</div><h3>Shared office</h3>
+        <p class="lbl">Booking lengths</p>
+        <ul class="chips"><li>1 hr</li><li>2 hrs</li><li>4 hrs</li><li>8 hrs</li></ul>
+      </li>
+      <li class="room wide">
+        <div class="num">504C</div><h3>Classroom</h3>
+        <p class="lbl">Booking lengths</p>
+        <ul class="chips"><li>1 hr to 8 hrs</li></ul>
+      </li>
+    </ul>
+    <a class="btn" href="https://bookings.cloud.microsoft/book/1DavisFloor5@bookings.usf.edu/?ismsaljsauthenabled">Reserve a 1 Davis space</a>
+    <p class="note">You can book up to a year in advance. Booking requires a USF sign-in.</p>
+  </section>
+
+  <section id="how">
+    <h2>How to book</h2>
+    <p class="lede">Four steps in Microsoft Bookings.</p>
+    <ol class="steps">
+      <li><b>Select a service</b><span>Pick the room and length, such as “Classroom – 4 hours”. Use “Show more services” to see them all.</span></li>
+      <li><b>Select staff</b><span>Choose the room listed, or leave it on “Anyone”.</span></li>
+      <li><b>Select a date and start time</b><span>Times are shown in Eastern Time.</span></li>
+      <li><b>Enter contact info and book</b><span>You’ll get a confirmation for your reservation.</span></li>
+    </ol>
+  </section>
+
+  <section id="rules">
+    <h2>Space rules</h2>
+    <p class="lede">Shared space works when everyone leaves it as they found it.</p>
+    <ul class="rules">
+      <li><h3>Return furniture</h3><p>If you move furniture, return it to the space where you found it.</p></li>
+      <li><h3>Cancel if needed</h3><p>If you no longer need the space, cancel online so others can use it.</p></li>
+      <li><h3>Leave it ready</h3><p>Tidy up after yourself and your group, and leave the space ready for others.</p></li>
+    </ul>
+    <div class="banner">See a space open while you’re in the office? Book it on the calendar so others know it’s occupied.</div>
+  </section>
+
+  <section id="fhsc">
+    <h2>Need a different space?</h2>
+    <p class="lede">Other USF Health bookable space at TGH FHSC.</p>
+    <div class="cols">
+      <div class="panel">
+        <h3>TGH FHSC self-service booking</h3>
+        <p>Desks, offices, and conference rooms on floors 5 and 6.</p>
+        <ul class="links">
+          <li><a href="https://bookings.cloud.microsoft/book/TGHFHSCFloor5@bookings.usf.edu/?ismsaljsauthenabled">FHSC Floor 5 <small>Book</small></a></li>
+          <li><a href="https://bookings.cloud.microsoft/book/TGHFHSCFloor6@bookings.usf.edu/?ismsaljsauthenabled">FHSC Floor 6 <small>Book</small></a></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>FHSC conference rooms</h3>
+        <p>Request by email: Rebecca Gill (TGH), <a href="mailto:rgill@tgh.org">rgill@tgh.org</a></p>
+        <table>
+          <thead><tr><th>Room</th><th>Capacity</th></tr></thead>
+          <tbody>
+            <tr><td>FHSC 112</td><td>12 people</td></tr>
+            <tr><td>FHSC 113</td><td>6 people</td></tr>
+            <tr><td>FHSC 118</td><td>50 people</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts">
+    <h2>Points of contact</h2>
+    <p class="lede">Who to call or write for each kind of problem.</p>
+    <dl class="contacts">
+      <div><dt>Booking questions</dt><dd><a href="mailto:mcom-emergencymedicine@usf.edu">mcom-emergencymedicine@usf.edu</a></dd></div>
+      <div><dt>Wi-Fi</dt><dd>Network: Guest_Internet<br>Password: welcome!</dd></div>
+      <div><dt>Security</dt><dd><a href="tel:8138447363">813-844-7363</a></dd></div>
+      <div><dt>Facilities</dt><dd>Call TGH service response<br><a href="tel:8138441111">(813) 844-1111</a></dd></div>
+      <div class="emerg"><dt>Emergencies</dt><dd>Call 911, not Code Purple</dd></div>
+    </dl>
+  </section>
+
+  <footer>
+    <strong>EM Hotel Space Guide</strong> · Department of Emergency Medicine, USF Health Morsani College of Medicine, 1 Davis Blvd.
+  </footer>
+</main>
+</body>
+</html>
